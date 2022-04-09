@@ -1,12 +1,12 @@
 version: "3"
 
 services:
-  mysql:
-    image: mysql
+  database:
+    image: mysql:8.0.28
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=geekshop
+      - MYSQL_DATABASE=geekshopping
     ports:
       - "3306:3306"
     volumes:
